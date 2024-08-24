@@ -3,6 +3,7 @@
   "version": 1,
   "projects": {
     "presentation-page": {
+      "projectType": "application",
       "root": "src",
       "sourceRoot": "src",
       "architect": {
