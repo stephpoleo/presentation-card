@@ -53,8 +53,24 @@
             }
           },
           "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "presentation-page:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "presentation-page:build:production"
+            },
+            "development": {
+              "browserTarget": "presentation-page:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
         }
       }
     }
-  }
+  },
+  "defaultProject": "presentation-page"
 }
